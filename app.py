@@ -27,7 +27,8 @@ movies=pd.DataFrame(movies_dict)
 
 similarity=pickle.load(open('similarity.pkl','rb'))
 
-st.title('Movie Recommender System')
+#st.title('Movie Recommender System')
+st.markdown("<h1 style='text-align: center; color: #FF4B4B;'>Movie Recommender System</h1>", unsafe_allow_html=True)
 selected_movie_name = st.selectbox(
     "What type of movie you would like to watch?",
     movies['title'].values,
